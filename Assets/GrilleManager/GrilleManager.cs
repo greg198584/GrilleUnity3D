@@ -9,14 +9,6 @@ namespace APIGrid
     {
         private RequestHelper currentRequest;
 
-        private void LogMessage(string title, string message) {
-#if UNITY_EDITOR
-            EditorUtility.DisplayDialog (title, message, "Ok");
-#else
-        Debug.Log(message);
-#endif
-        }
-    
         // Start is called before the first frame update
         public static void GetStatus()
         {
